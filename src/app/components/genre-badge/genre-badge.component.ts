@@ -1,0 +1,19 @@
+import {Component, OnInit} from '@angular/core';
+import {IGenre} from "../../interfaces";
+import {GenreService} from "../../services/genre.service";
+
+@Component({
+  selector: 'app-genre-badge',
+  templateUrl: './genre-badge.component.html',
+  styleUrls: ['./genre-badge.component.css']
+})
+export class GenreBadgeComponent implements OnInit {
+
+  genres: IGenre[];
+  constructor(private genreService:GenreService) { }
+
+  ngOnInit(): void {
+    this.genreService.getGenres().subscribe(value => this.genres = value.genres)
+  }
+
+}

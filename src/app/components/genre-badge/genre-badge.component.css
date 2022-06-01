@@ -1,0 +1,11 @@
+select {
+  background: #0a1752;
+  border: 1px solid rgb(255, 255, 255);
+  color: snow;
+  border-radius: 10px;
+}
+
+
+option{
+  background-color: #1c2a77;
+}

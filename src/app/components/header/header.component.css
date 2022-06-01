@@ -1,8 +1,28 @@
-.img{
+.imgLogo{
   height: 40px;
   width: 40px;
 }
 
+.imgUser{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.input{
+  margin-top: 10px;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  color: snow;
+}
+
 .container{
   display: flex;
+  justify-content: space-between;
+  background-color: #0a1752;
 }
+
+
