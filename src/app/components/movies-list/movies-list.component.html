@@ -1,2 +1,6 @@
-<app-movies-list-card *ngFor="let movie of movies" [movie]="movie"></app-movies-list-card>
-<router-outlet></router-outlet>
+<div class="movieList">
+  <app-movies-list-card *ngFor="let movie of movies" [movie]="movie"></app-movies-list-card>
+</div>
+<!--<button (click)="pageChange()">❮</button>-->
+<!--<button (click)="pageChange()">❯</button>-->
+

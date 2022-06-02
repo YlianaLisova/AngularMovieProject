@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MovieService} from "../../services";
 import {IMovie} from "../../interfaces";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-movies-list',
@@ -10,12 +11,21 @@ import {IMovie} from "../../interfaces";
 export class MoviesListComponent implements OnInit {
 
   movies: IMovie[];
+  page: number ;
 
-  constructor(private movieService: MovieService) {
+  constructor(private movieService: MovieService, private router: Router, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.movieService.getAllMovies().subscribe(value => this.movies = value.results)
+    this.activatedRoute.queryParams.subscribe(({page}) => {
+      this.movieService.getAllMovies(page||1).subscribe(value => {
+        this.movies = value.results
+      })
+    })
+  }
+
+  pageChange(num:number){
+    this.page = num
   }
 
 }

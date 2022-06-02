@@ -9,9 +9,9 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {MainInterceptor} from "./main.interceptor";
 import {MoviesListComponent} from './components/movies-list/movies-list.component';
 import {MoviesListCardComponent} from './components/movies-list-card/movies-list-card.component';
-import {PosterPreviewComponent} from './components/poster-preview/poster-preview.component';
 import { GenreBadgeComponent } from './components/genre-badge/genre-badge.component';
 import { SearchComponent } from './components/search/search.component';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +20,9 @@ import { SearchComponent } from './components/search/search.component';
     MainLayoutComponent,
     MoviesListComponent,
     MoviesListCardComponent,
-    PosterPreviewComponent,
     GenreBadgeComponent,
-    SearchComponent
+    SearchComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule,

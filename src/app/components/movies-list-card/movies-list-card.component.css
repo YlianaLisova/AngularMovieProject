@@ -1,1 +1,24 @@
+.info {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.title a {
+  text-decoration: none;
+  color: black;
+}
+
+.title a:hover {
+  color: #2079bd;
+}
+
+.movie {
+  border: 1px solid #181818;
+  height: 350px;
+  border-radius: 5px;
+  background-color: #434852;
+}

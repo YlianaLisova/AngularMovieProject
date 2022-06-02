@@ -8,6 +8,7 @@ import {IMovie} from "../../interfaces";
 })
 export class MoviesListCardComponent implements OnInit {
 
+
   @Input()
   movie: IMovie;
   constructor() { }
