@@ -3,4 +3,5 @@
   <div class="info">
     <div class="title"><a routerLink="{{movie.id}}" [state]="movie" >{{movie.title}}</a></div>
   </div>
+<app-rating [currentRate]="movie.vote_average"></app-rating>
 </div>

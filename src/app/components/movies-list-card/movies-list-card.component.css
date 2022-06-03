@@ -18,11 +18,12 @@
 
 .movie {
   border: 1px solid #181818;
-  height: 380px;
+  height: 440px;
   border-radius: 10px;
   background-color: #424244;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .movie:hover{
