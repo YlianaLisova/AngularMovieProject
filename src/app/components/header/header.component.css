@@ -25,4 +25,19 @@
   background-color: #0a1752;
 }
 
+.AMovie a{
+  text-decoration: none;
+  color: snow;
+}
+
+.navBarLeft{
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+}
 

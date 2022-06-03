@@ -18,7 +18,12 @@
 
 .movie {
   border: 1px solid #181818;
-  height: 350px;
+  height: 380px;
   border-radius: 5px;
   background-color: #434852;
+}
+
+.movie:hover{
+  transform: translateY(-8px);
+  cursor: pointer;
 }

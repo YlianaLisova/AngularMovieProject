@@ -1,9 +1,15 @@
 <div class="container">
-  <div><img class="imgLogo"
-            src="https://www.themoviedb.org/assets/2/apple-touch-icon-cfba7699efe7a742de25c28e08c38525f19381d31087c69e89d6bcb8e3c0ddfa.png"
-            alt="MovieDB"></div>
-  <div><app-genre-badge></app-genre-badge></div>
-  <div><app-search></app-search></div>
+  <div class="navBarLeft">
+    <div><img class="imgLogo"
+              src="https://www.themoviedb.org/assets/2/apple-touch-icon-cfba7699efe7a742de25c28e08c38525f19381d31087c69e89d6bcb8e3c0ddfa.png"
+              alt="MovieDB">
+    </div>
+    <div class="AMovie"><a routerLink="movie">Movies</a></div>
+    <div>
+      <app-genre-badge></app-genre-badge>
+    </div>
+  </div>
+  <div class="search"><app-search></app-search></div>
   <div class="user">
     <img class="imgUser" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" alt="user">
     <span class="userName">Yliana</span>

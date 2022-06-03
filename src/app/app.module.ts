@@ -13,6 +13,8 @@ import { GenreBadgeComponent } from './components/genre-badge/genre-badge.compon
 import { SearchComponent } from './components/search/search.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { RatingComponent } from './components/rating/rating.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     SearchComponent,
     MovieDetailsComponent,
     PaginationComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbModule,
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
