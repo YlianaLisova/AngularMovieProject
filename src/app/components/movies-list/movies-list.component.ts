@@ -24,8 +24,5 @@ export class MoviesListComponent implements OnInit {
     })
   }
 
-  pageChange(num:number){
-    this.page = num
-  }
 
 }

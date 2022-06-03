@@ -12,6 +12,7 @@ import {MoviesListCardComponent} from './components/movies-list-card/movies-list
 import { GenreBadgeComponent } from './components/genre-badge/genre-badge.component';
 import { SearchComponent } from './components/search/search.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
     GenreBadgeComponent,
     SearchComponent,
     MovieDetailsComponent,
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,

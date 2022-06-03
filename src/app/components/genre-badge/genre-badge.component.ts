@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {IGenre} from "../../interfaces";
-import {GenreService} from "../../services/genre.service";
+import {GenreService} from "../../services";
 
 @Component({
   selector: 'app-genre-badge',
