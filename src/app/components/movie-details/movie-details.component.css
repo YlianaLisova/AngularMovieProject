@@ -8,12 +8,15 @@
 .movie{
   display: flex;
   flex-direction: column;
-  max-width: 700px;
   border: 1px solid black;
-  height: 400px;
+  min-height: 600px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  /*background: #2f2b2b;*/
+  color: white;
+  background-image: url("https://wallpaper.dog/large/5438555.jpg");
+  width: 100%;
 }
 
 .info{
@@ -29,18 +32,24 @@
 
 .title{
 left: auto;
+  font-size: 22px;
 }
 
 .container{
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-top: 30px;
-  margin-right: 20px;
 }
 
 hr{
   width: 400px;
+  height: 2px;
+  color: #a1a1a1;
+}
+
+img{
+  border-radius: 5px;
 }
 
 

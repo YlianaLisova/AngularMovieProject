@@ -9,7 +9,7 @@
 
 .title a {
   text-decoration: none;
-  color: black;
+  color: #f3dede;
 }
 
 .title a:hover {
@@ -19,8 +19,19 @@
 .movie {
   border: 1px solid #181818;
   height: 380px;
-  border-radius: 5px;
-  background-color: #434852;
+  border-radius: 10px;
+  background-color: #424244;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie:hover{
+  box-shadow: 0 10px 15px 4px rgba(58,43,64,0.56);
+  -webkit-box-shadow: 0 10px 15px 4px rgba(58,43,64,0.56);
+  -moz-box-shadow: 0 10px 15px 4px rgba(58,43,64,0.56);
+}
+.movie img{
+  border-radius: 10px;
 }
 
 .movie:hover{
