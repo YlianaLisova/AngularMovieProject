@@ -3,7 +3,7 @@ import {IGenre} from "../../interfaces";
 import {GenreService} from "../../services";
 import {FormArray, FormBuilder, FormControl, FormGroup} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
-import {DataService} from "../../services/data.service";
+import {DataService} from "../../services";
 
 @Component({
   selector: 'app-genre-badge',
@@ -14,7 +14,6 @@ export class GenreBadgeComponent implements OnInit {
 
   genres: IGenre[];
   form: FormGroup;
-  statusCheckbox: boolean;
 
   constructor(private genreService: GenreService, private dataService:DataService,private formBuilder: FormBuilder, private activatedRoute: ActivatedRoute, private router:Router) {
     this.formCreator()
@@ -39,6 +38,7 @@ export class GenreBadgeComponent implements OnInit {
       with_genres: this.form.value.genresSelected.join(';')
     }
   })
+
   }
 
   checkbox(event: any) {
