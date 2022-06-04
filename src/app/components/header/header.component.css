@@ -40,10 +40,6 @@
   gap: 0 10px;
 }
 
-.search{
-  display: flex;
-  align-items: center;
-}
 
 .switch input {
   opacity: 0;
@@ -114,4 +110,13 @@ input:checked + .slider:before {
   display: flex;
   gap: 0 10px;
   align-items: center;
+}
+
+.search a{
+  text-decoration: none;
+  color: snow;
+}
+
+.active a{
+  color: #daceff;
 }

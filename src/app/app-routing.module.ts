@@ -5,6 +5,7 @@ import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
 import {MoviesListComponent} from "./components/movies-list/movies-list.component";
 import {MovieDetailsComponent} from "./components/movie-details/movie-details.component";
 import {GenreBadgeComponent} from "./components/genre-badge/genre-badge.component";
+import {SearchComponent} from "./components/search/search.component";
 
 
 const routes: Routes = [{
@@ -14,8 +15,11 @@ const routes: Routes = [{
         {path:'genres', component:GenreBadgeComponent}
       ]},
     {path: 'movie/:id', component: MovieDetailsComponent},
+    {path:'search', component:SearchComponent},
+    {path: 'search/:id', component: MovieDetailsComponent}
   ]
-}]
+}
+]
 
 @NgModule({
   declarations: [],

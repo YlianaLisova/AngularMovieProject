@@ -1,8 +1,18 @@
-<div class="container">
-  <form action="/" method="GET" class="form">
-    <input type="search" placeholder="Search" routerLink="search" class="search-field" />
-    <button type="submit" class="search-button">
-      <img src="https://www.kindacode.com/wp-content/uploads/2020/12/search.png" alt="search">
-    </button>
-  </form>
+<div class='search-section'>
+  <div class="head-content">
+    <!--Getting movie title input from the user-->
+    <input type="text" [(ngModel)]="title" placeholder="Search..." class="form-control" /><br>
+    <button (click)="getMovie(title)" class="btn btn-primary btm-block">SEARCH</button>
+  </div>
+  <!--This section will display the search result based on the movie title given by user-->
+  <div class="listMovie">
+    <div *ngFor="let movie of movies" class="movie" routerLink="{{movie.id}}">
+      <div><img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="movie img"></div>
+      <div class="info">
+        <div class="title"><a routerLink="{{movie.id}}" [state]="movie">{{movie.title}}</a></div>
+      </div>
+      <app-rating [currentRate]="movie.vote_average"></app-rating>
+    </div>
+  </div>
 </div>
+<router-outlet></router-outlet>
