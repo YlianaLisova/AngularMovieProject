@@ -15,6 +15,7 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    ReactiveFormsModule,
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

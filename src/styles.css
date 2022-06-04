@@ -3,7 +3,6 @@ body {
   --text-color: #222;
   --bkg-color: #fff;
   --btn-txt-color: white;
-
 }
 body.dark-theme {
   --text-color: #eee;
