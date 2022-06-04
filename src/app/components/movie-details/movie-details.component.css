@@ -16,7 +16,8 @@
   /*background: #2f2b2b;*/
   color: white;
   background-image: url("https://wallpaper.dog/large/5438555.jpg");
-  width: 100%;
+  width: 900px;
+  margin-top: 20px;
 }
 
 .info{
